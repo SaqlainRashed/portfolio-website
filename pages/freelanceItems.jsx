@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const FreelanceItem = ({ title, backgroundImg, tech, projectUrl }) => {
+  const auth = projectUrl?.auth || null;
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
       <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt={title} /> {/* Set alt text to title */}

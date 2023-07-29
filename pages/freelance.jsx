@@ -1,49 +1,174 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import appImg from '../public/assets/images/project-5.png';
-import cryptoImg from '../public/assets/images/project-2.png';
+
+import appImg from '../public/assets/images/project-1.png';
+import cryptoImg from '../public/assets/images/project-2.png'; 
 import leafImg from '../public/assets/images/project-3.png';
 import flowerImg from '../public/assets/images/project-4.png';
-import FreelanceItem from './freelanceItems';
 
 const Freelance = () => {
-  return (
-    <div>
-      <h1 className='text-4xl pt-[15vh] text-center font-bold'>Freelance Projects</h1>
-      <p className='text-lg text-center'>These are some of my most recent freelanced projects.</p>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8 mx-4 lg:mx-12'>
-        <FreelanceItem
-          title='Project 1'
-          backgroundImg={appImg}
-          projectUrl='https://uecpl.co.in/'
-          tech='Technologies: React, Node.js'
-        />
-        <FreelanceItem
-          title='Project 2'
-          backgroundImg={cryptoImg}
-          projectUrl='https://xtremead.in/'
-          tech='Technologies: Angular, MongoDB'
-        />
-        <FreelanceItem
-          title='Project 3'
-          backgroundImg={leafImg}
-          projectUrl='https://www.247casino.info/'
-          tech='Technologies: Vue.js, PostgreSQL'
-        />
-        <FreelanceItem
-          title='Project 4'
-          backgroundImg={flowerImg}
-          projectUrl='https://tmmt.in/'
-          tech='Technologies: Laravel, MySQL'
-        />
+  const projects = [
+    {
+      title: 'Project 1',
+      img: appImg, 
+      url: 'https://uecpl.co.in/',
+      tech: 'React, Node.js'
+    },
+    {
+      title: 'Project 2', 
+      img: cryptoImg,
+      url: 'https://xtremead.in/',
+      tech: 'Angular, MongoDB'
+    },
+    {
+      title: 'Project 3',
+      img: leafImg,
+      url: 'https://www.247casino.info/', 
+      tech: 'Vue.js, PostgreSQL'
+    },
+    {
+      title: 'Project 4',
+      img: flowerImg, 
+      url: 'https://tmmt.in/',
+      tech: 'Laravel, MySQL'
+    }
+  ];
+
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold pb-4">Freelance Projects</h1>
+
+      <p className="text-lg pb-8">
+        Explore my portfolio of freelance projects:
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      
+        {projects.map(project => (
+          <div key={project.title} className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
+
+            <Image 
+              className="rounded-xl group-hover:opacity-10"
+              src={project.img}
+              alt={project.title} 
+            />
+
+            <div className="absolute hidden translate-x-[-50%] translate-y-[-50%] group-hover:block top-[50%] left-[50%]">
+              <h3 className="text-2xl text-white tracking-wider text-center">
+                {project.title}  
+              </h3>
+              
+              <p className="pb-4 pt-2 text-white text-center">
+                {project.tech}
+              </p>
+              
+              <Link href={project.url}>
+                <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                  Visit
+                </p>
+              </Link>
+              
+            </div>
+
+          </div>
+        ))}
+        
       </div>
+
     </div>
   );
 };
 
 export default Freelance;
+
+
+
+
+
+// import Image from 'next/image';
+// import Link from 'next/link';
+// import React from 'react';
+
+// const FreelanceItem = ({ title, backgroundImg, tech, projectUrl }) => {
+//   return (
+//     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
+//       <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' />
+//       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+//         <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
+//         <p className='pb-4 pt-2 text-white text-center'>{tech}</p>
+//         <Link href={projectUrl}>
+//           <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>Visit</p>
+//         </Link>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default FreelanceItem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import Image from 'next/image';
+// import Link from 'next/link';
+// import React from 'react';
+// import appImg from '../public/assets/images/project-5.png';
+// import cryptoImg from '../public/assets/images/project-2.png';
+// import leafImg from '../public/assets/images/project-3.png';
+// import flowerImg from '../public/assets/images/project-4.png';
+// import FreelanceItem from './freelanceItems';
+
+// const Freelance = () => {
+//   return (
+//     <div>
+//       <h1 className='text-4xl pt-[15vh] text-center font-bold'>Freelance Projects</h1>
+//       <p className='text-lg text-center'>These are some of my most recent freelanced projects.</p>
+
+//       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8 mx-4 lg:mx-12'>
+//         <FreelanceItem
+//           title='Project 1'
+//           backgroundImg={appImg}
+//           projectUrl='https://uecpl.co.in/'
+//           tech='Technologies: React, Node.js'
+//         />
+//         <FreelanceItem
+//           title='Project 2'
+//           backgroundImg={cryptoImg}
+//           projectUrl='https://xtremead.in/'
+//           tech='Technologies: Angular, MongoDB'
+//         />
+//         <FreelanceItem
+//           title='Project 3'
+//           backgroundImg={leafImg}
+//           projectUrl='https://www.247casino.info/'
+//           tech='Technologies: Vue.js, PostgreSQL'
+//         />
+//         <FreelanceItem
+//           title='Project 4'
+//           backgroundImg={flowerImg}
+//           projectUrl='https://tmmt.in/'
+//           tech='Technologies: Laravel, MySQL'
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Freelance;
 
 
 

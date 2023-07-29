@@ -74,15 +74,15 @@ const resume = () => {
             <span className='px-2'>|</span>PHP
             <span className='px-2'>|</span>HTML
             <span className='px-2'>|</span>CSS
-            <span className='px-2'>|</span>Bootstrap
+            <span className='px-2'>|</span>Bootstrap<br></br>
             <span className='px-2'>|</span>Javascript
             <span className='px-2'>|</span>WordPress
             <span className='px-2'>|</span>React
-            <span className='px-2'>|</span>Next JS
+            <span className='px-2'>|</span>Next JS<br></br>
             <span className='px-2'>|</span>Node JS
             <span className='px-2'>|</span>MySQL
             <span className='px-2'>|</span>MongoDB
-            <span className='px-2'>|</span>Tailwind
+            <span className='px-2'>|</span>Tailwind<br></br>
             <span className='px-2'>|</span>Firebase
           </p>
           <p className='py-2'>

@@ -28,7 +28,7 @@ const property = () => {
           <h2>Overview</h2>
           <p>
           GatherHub is an innovative event management website that offers a seamless and engaging platform for users to explore and participate in various events. With a user-friendly interface, GatherHub allows users to sign in effortlessly using their Gmail accounts and access a personalized profile.<br></br>
-          Once logged in, users can browse and discover a wide array of events hosted on the platform, catering to diverse interests and preferences. Whether it's concerts, workshops, or community gatherings, GatherHub has something for everyone.<br></br>
+          Once logged in, users can browse and discover a wide array of events hosted on the platform, catering to diverse interests and preferences. Whether it is concerts, workshops, or community gatherings, GatherHub has something for everyone.<br></br>
           The website also empowers users to take charge and create their events for specific time periods, making it convenient for organizers to plan and manage gatherings. Additionally, users can easily register for events they are interested in attending.<br></br>
           GatherHub is built using a powerful tech stack, including React, Node.js, JWT, Cors, Bcrypt, Axios, Bootstrap, and JavaScript, ensuring a robust and secure user experience. The platform fosters a vibrant community where individuals can come together, connect, and celebrate shared interests through memorable events.
           </p>
@@ -40,7 +40,7 @@ const property = () => {
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </a>
           <a
-            href='https://gatherhub.vercel.app/'
+            href='https://todo.saqlainrashid.dev/'
             target='_blank'
             rel='noreferrer'
           >

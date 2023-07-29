@@ -28,7 +28,7 @@ const property = () => {
           <h2>Overview</h2>
           <p>
           The Library Management System (LMS) is a college project developed using PHP, MySQL, JavaScript, HTML, and CSS. The system provides an efficient and user-friendly platform for managing library resources and user data. It includes an admin login feature for authorized personnel to access administrative functionalities.<br></br>
-          The LMS allows the admin to perform various tasks, including managing the library's book inventory by adding, editing, and deleting books. The system also tracks the number of times books have been issued and returned, helping to monitor popular titles and manage book circulation effectively.
+          The LMS allows the admin to perform various tasks, including managing the library books inventory by adding, editing, and deleting books. The system also tracks the number of times books have been issued and returned, helping to monitor popular titles and manage book circulation effectively.
           Additionally, the LMS keeps a record of registered users, enabling the admin to manage user accounts and track user activities. The system also offers a comprehensive list of authors and categories for better organization and easier book retrieval. Overall, this LMS project streamlines library operations and enhances the user experience for both administrators and library patrons.
           </p>
           <a

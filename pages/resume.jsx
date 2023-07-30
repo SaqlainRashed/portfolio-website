@@ -33,7 +33,7 @@ const resume = () => {
             >
               <FaGithub size={20} style={{ marginRight: '1rem' }} />
             </a>
-            <a href='https://github.com/SaqlainRashed'
+            <a href='https://drive.google.com/uc?export=download&id=1MdhGkuYDjbSwE36WdleK25Ju93CG9Ab2'
               target='_blank'
               rel='noreferrer'
               className='inline-flex font-bold items-center'>

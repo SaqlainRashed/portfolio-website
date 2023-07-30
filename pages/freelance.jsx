@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import appImg from '../public/assets/images/project-1.png';
+import appImg from '../public/assets/images/project-5.png';
 import cryptoImg from '../public/assets/images/project-2.png'; 
 import leafImg from '../public/assets/images/project-3.png';
 import flowerImg from '../public/assets/images/project-4.png';
@@ -11,28 +11,28 @@ const Freelance = () => {
 
   const projects = [
     {
-      title: 'Project 1',
+      title: 'Consultancy Website',
       img: appImg, 
       url: 'https://uecpl.co.in/',
-      tech: 'React, Node.js'
+      tech: 'React, JavaScript, Html, Css'
     },
     {
-      title: 'Project 2', 
+      title: 'Brand Management', 
       img: cryptoImg,
       url: 'https://xtremead.in/',
-      tech: 'Angular, MongoDB'
+      tech: 'React, Express, GitHub Actions, Digital Ocean'
     },
     {
-      title: 'Project 3',
+      title: 'Casino Website',
       img: leafImg,
       url: 'https://www.247casino.info/', 
-      tech: 'Vue.js, PostgreSQL'
+      tech: 'React, Sanity, Google Analytics, GitHub Actions, Digital Ocean'
     },
     {
-      title: 'Project 4',
+      title: 'Creator Service',
       img: flowerImg, 
       url: 'https://tmmt.in/',
-      tech: 'Laravel, MySQL'
+      tech: 'React, Express, Google Analytics, GitHub Actions, Digital Ocean'
     }
   ];
 
@@ -56,16 +56,16 @@ const Freelance = () => {
             />
 
             <div className="absolute hidden translate-x-[-50%] translate-y-[-50%] group-hover:block top-[50%] left-[50%]">
-              <h3 className="text-2xl text-white tracking-wider text-center">
+              <h3 className="text-xl lg:text-2xl text-white tracking-wider text-center">
                 {project.title}  
               </h3>
               
-              <p className="pb-4 pt-2 text-white text-center">
+              <p className="pb-4 lg:pb-4 pt-2 lg:pt-2 text-white text-center text-xs lg:text-base">
                 {project.tech}
               </p>
               
               <Link href={project.url}>
-                <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+                <p className="text-center py-2 px-4 rounded-lg bg-white text-gray-700 font-bold text-base lg:text-lg cursor-pointer">
                   Visit
                 </p>
               </Link>
